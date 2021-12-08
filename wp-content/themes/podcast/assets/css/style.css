@@ -3,6 +3,10 @@ html {
   width: 100vw;
 }
 
+body{
+  font-family: MONOSPACE;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -21,14 +25,18 @@ img {
   z-index: 1;
 }
 
-.bg-hero-podcast{
-  background-image: url("wp-content/themes/podcast/assets/img/triangle.svg"),url("wp-content/themes/podcast/assets/img/circle.svg"),linear-gradient(to right, #4E105C, #4E105C);
-  background-size: auto, auto, cover;
-  background-position: right bottom, right top, center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+#hero-title{
+  font-size: 3vw;
 }
 
-#hero-title span{
+.bg-hero-podcast{
+  background-image: url("wp-content/themes/podcast/assets/img/bg-image.png"),linear-gradient(to right, #4E105C, #4E105C);
+  background-size: auto, cover;
+  background-position: right , center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+#hero-title span.center-word{
   background-color: #FD741B;
   background-image: linear-gradient(to right, #FD741B, #A300BB);
   background-size: 100%;
@@ -36,4 +44,23 @@ img {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+}
+
+#hero-title span{
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  #hero-title span.text-right {
+    text-align: center !important;
+  }
+  #hero-title span.text-left {
+    text-align: center !important;
+  }
+  .bg-hero-podcast{
+    background-image: url("wp-content/themes/podcast/assets/img/bg-image.png"),linear-gradient(to right, #4E105C, #4E105C) !important;
+    background-size: auto, cover;
+    background-position: right , center;
+    background-repeat: no-repeat, no-repeat;
+  }
 }
