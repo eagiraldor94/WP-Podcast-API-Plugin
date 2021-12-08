@@ -18,9 +18,9 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center">
                 <h1 id="hero-title" class="row">
-                    <span class="col-12 col-sm text-end">Top 5</span>
+                    <span class="col-12 col-sm word-right">Top 5</span>
                     <span class="col-12 col-sm center-word">Web Design</span>
-                    <span class="col-12 col-sm text-start">Podcasts</span></h1>
+                    <span class="col-12 col-sm word-left">Podcasts</span></h1>
                 </div>
             </div>
         </header>
