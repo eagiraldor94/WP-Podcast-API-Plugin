@@ -1,6 +1,4 @@
 function addElement(podcast,number){
-    // Getting the main cointainer provided by shortcode
-    let container = document.getElementById('podcast-blocks')
 
     // Creating the HTML card element
     let htmlElement = '<div class="row podcast-card">'+
@@ -32,13 +30,12 @@ function addElement(podcast,number){
                 '</div>'+
             '</div>'+
             '<div class="col-12 col-sm-4 podcast-description">'+
-                    '+podcast.description+'
+                podcast.description+
             '</div>'+
         '</div>'+
         '</div>';
 
-    //Appending the html
-    container.innerHTML = htmlElement
+    return htmlElement
 }
 
 window.addEventListener("DOMContentLoaded",function(){
@@ -55,9 +52,15 @@ window.addEventListener("DOMContentLoaded",function(){
         if (json.podcasts.length < 5) {
             limit = json.podcasts.length
         }
+        // Getting the main cointainer provided by shortcode
+        let container = document.getElementById('podcast-blocks')
+        //initializing html
+        let html =''
         for (let i = 0; i < limit; i++) {
-            addElement(json.podcasts[i],i+1)
+            html += addElement(json.podcasts[i],i+1)
         }
+        //Appending the html
+        container.innerHTML = html
     })
     .catch(err=>{
         console.log(`Error: ${err}`)
