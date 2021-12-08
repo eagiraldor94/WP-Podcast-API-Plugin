@@ -19,11 +19,11 @@ function addElement(podcast,number){
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/apple.svg">'+
                         '<a href="https://itunes.com/'+podcast.itunes_id+'">ITUNES</a>'+
                     '</span>'+
-                    '<span class="website ml-1">'+
+                    '<span class="website ml-3">'+
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/link.svg">'+
                         '<a href="'+podcast.website+'">WEB</a>'+
                     '</span>'+
-                    '<span class="rss ml-1">'+
+                    '<span class="rss ml-3">'+
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/rss.svg">'+
                         '<a href="'+podcast.rss+'">RSS</a>'+
                     '</span>'+
