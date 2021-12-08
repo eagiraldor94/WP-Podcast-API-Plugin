@@ -4,7 +4,7 @@ html {
 }
 
 body{
-  font-family: MONOSPACE;
+  font-family: SpaceMono !important;
 }
 
 img {

@@ -1,7 +1,7 @@
 function addElement(podcast,number){
 
     // Creating the HTML card element
-    let htmlElement = '<div class="row podcast-card">'+
+    let htmlElement = '<div class="row podcast-card mt-3">'+
         '<div class="col-12 col-sm-2">'+
             '<div class="podcast-number">'+number+'</div>'+
         '</div>'+
@@ -12,18 +12,18 @@ function addElement(podcast,number){
             '<div class="col-8 col-sm-5 podcast-resume">'+
                 '<h2 class="podcast-title">'+podcast.title+'</h2>'+
                 '<div class="podcast-authors">by <span class="authors-names">'+podcast.publisher+'</span></div>'+
-                '<div class="podcast-episodes">'+podcast.total_episodes+'</span></div>'+
+                '<div class="podcast-episodes">'+podcast.total_episodes+' Episodes</span></div>'+
                 '<hr>'+
                 '<div class="podcast-links">'+
                     '<span class="itunes">'+
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/apple.svg">'+
                         '<a href="https://itunes.com/'+podcast.itunes_id+'">ITUNES</a>'+
                     '</span>'+
-                    '<span class="website">'+
+                    '<span class="website ml-1">'+
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/link.svg">'+
                         '<a href="'+podcast.website+'">WEB</a>'+
                     '</span>'+
-                    '<span class="rss">'+
+                    '<span class="rss ml-1">'+
                         '<img src="/wp-content/plugins/podcast-api/public/assets/img/rss.svg">'+
                         '<a href="'+podcast.rss+'">RSS</a>'+
                     '</span>'+
