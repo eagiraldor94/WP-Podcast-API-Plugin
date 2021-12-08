@@ -6,6 +6,9 @@
 .authors-names{
     color: #9C00B2;
 }
+.podcast-description{
+    font-family: WorkSans;
+}
 
 .podcast-card:hover .authors-names, .podcast-card:hover .podcast-links a{
     color: #FD741B !important;
