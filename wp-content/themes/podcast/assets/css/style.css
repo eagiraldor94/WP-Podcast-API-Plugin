@@ -1,0 +1,39 @@
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#menu div{ 
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #222222;
+  border-radius: 3px;
+  
+  z-index: 1;
+}
+
+.bg-hero-podcast{
+  background-image: url("wp-content/themes/podcast/assets/img/triangle.svg"),url("wp-content/themes/podcast/assets/img/circle.svg"),linear-gradient(to right, #4E105C, #4E105C);
+  background-size: auto, auto, cover;
+  background-position: right bottom, right top, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+#hero-title span{
+  background-color: #FD741B;
+  background-image: linear-gradient(to right, #FD741B, #A300BB);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}

@@ -1,0 +1,23 @@
+/* SpaceMono */
+@font-face {
+    font-family: 'SpaceMono';
+    font-style: normal;
+    font-weight: normal;
+    src: url(wp-content/themes/podcast/assets/fonts/Space_Mono/SpaceMono-Regular.ttf);
+  }
+
+  /* SpaceMono Bold */
+@font-face {
+    font-family: 'SpaceMono';
+    font-style: normal;
+    font-weight: bold;
+    src: url(wp-content/themes/podcast/assets/fonts/Space_Mono/SpaceMono-Bold.ttf);
+  }
+
+  /* WorkSans*/
+@font-face {
+    font-family: 'WorkSans';
+    font-style: normal;
+    font-weight: normal;
+    src: url(wp-content/themes/podcast/assets/fonts/Work_Sans/WorkSans-Regular.ttf);
+  }
